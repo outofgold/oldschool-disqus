@@ -1,0 +1,25 @@
+{
+  "name": "oldschool-disqus",
+  "scripts": {
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/outofgold/oldschool-disqus.git"
+  },
+  "author": "outofgold",
+  "bugs": {
+    "url": "https://github.com/outofgold/oldschool-disqus/issues"
+  },
+  "homepage": "https://github.com/outofgold/oldschool-disqus#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-css2js": "^1.2.1",
+    "merge-stream": "^2.0.0"
+  },
+  "engines": {
+    "node": "^18",
+    "npm": "^8"
+  }
+}
