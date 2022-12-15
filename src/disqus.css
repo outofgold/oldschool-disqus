@@ -7701,7 +7701,7 @@ div.new-feature-badge-star {
     background-color: #f9f9f9;
     padding: 18px;
     /*border-radius: 20px;*/
-    margin-bottom: 24px
+    margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -8767,7 +8767,8 @@ div.new-feature-badge-star {
 }
 
 .spacing-bottom-large {
-    margin-bottom: 25px
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .spacing-bottom-double {

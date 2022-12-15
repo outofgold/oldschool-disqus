@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Oldschool Disqus
 // @namespace    http://tampermonkey.net/
-// @version      0.1.1
+// @version      0.1.2
 // @description  Bring back the old design of Disqus comments
 // @author       outofgold
 // @match        https://disqus.com/embed/comments/*
@@ -7745,7 +7745,7 @@ const css = "/* Default Disqus styles */\n" +
 "    background-color: #f9f9f9;\n" +
 "    padding: 18px;\n" +
 "    /*border-radius: 20px;*/\n" +
-"    margin-bottom: 24px\n" +
+"    margin-bottom: 10px;\n" +
 "}\n" +
 "\n" +
 "@media only screen and (max-width: 767px) {\n" +
@@ -8811,7 +8811,8 @@ const css = "/* Default Disqus styles */\n" +
 "}\n" +
 "\n" +
 ".spacing-bottom-large {\n" +
-"    margin-bottom: 25px\n" +
+"    margin-bottom: 10px;\n" +
+"    margin-top: 10px;\n" +
 "}\n" +
 "\n" +
 ".spacing-bottom-double {\n" +
