@@ -5097,11 +5097,11 @@ h6 {
     background: var(--publisher-color-safe, #2e9fff);
     display: block;
     text-align: center;
-    padding: 9px 0 8px;
+    padding: 6px 0 4px;
     /*border-radius: 15px;*/
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 21px
 }
 
