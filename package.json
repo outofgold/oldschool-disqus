@@ -1,7 +1,8 @@
 {
   "name": "oldschool-disqus",
   "scripts": {
-    "build": "gulp build"
+    "build": "gulp build",
+    "watch": "gulp watch"
   },
   "repository": {
     "type": "git",
@@ -16,7 +17,7 @@
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-css2js": "^1.2.1",
-    "merge-stream": "^2.0.0"
+    "streamqueue": "^1.1.2"
   },
   "engines": {
     "node": "^18",

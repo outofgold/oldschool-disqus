@@ -1,7 +1,7 @@
 const gulp = require("gulp");
 const css2js = require("gulp-css2js");
 const concat = require('gulp-concat');
-const merge = require('merge-stream');
+const streamQueue = require('streamqueue');
 
 gulp.task('build', () => {
     const jsStream = gulp
@@ -16,7 +16,9 @@ gulp.task('build', () => {
         }))
         .pipe(concat('disqus.css'));
 
-    return merge(jsStream, cssStream)
+    return streamQueue({ objectMode: true }, jsStream, cssStream)
         .pipe(concat('disqus.user.js'))
         .pipe(gulp.dest('./dist/'))
 });
+
+gulp.task('watch', () => gulp.watch(['src/*'], (done) => gulp.series('build')() || done()));
