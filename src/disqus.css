@@ -6395,10 +6395,11 @@ h6 {
     /*border-radius: 14px;*/
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 1;
     color: var(--publisher-color-safe, #2e9fff);
-    padding: 7px
+    padding: 7px;
+    margin-top: 3px;
 }
 
 @media (max-width: 480px) {
