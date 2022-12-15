@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Oldschool Disqus
 // @namespace    http://tampermonkey.net/
-// @version      0.1.4
+// @version      0.1.5
 // @description  Bring back the old design of Disqus comments
 // @author       outofgold
 // @match        https://disqus.com/embed/comments/*
@@ -271,7 +271,8 @@ const css = "/* Default Disqus styles */\n" +
 "\n" +
 ".dropdown-menu a, .dropdown-menu--refresh a {\n" +
 "    font-weight: 500;\n" +
-"    line-height: 18px;\n" +
+"    line-height: 15px;\n" +
+"    font-size: 15px;\n" +
 "    white-space: nowrap\n" +
 "}\n" +
 "\n" +

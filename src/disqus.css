@@ -227,7 +227,8 @@ a {
 
 .dropdown-menu a, .dropdown-menu--refresh a {
     font-weight: 500;
-    line-height: 18px;
+    line-height: 15px;
+    font-size: 15px;
     white-space: nowrap
 }
 
