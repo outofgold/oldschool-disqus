@@ -4164,12 +4164,12 @@ h6 {
 .load-more-refresh__button {
     display: block;
     text-align: center;
-    padding: 9px 0 8px;
+    padding: 6px 0 4px;
     /*border-radius: 15px;*/
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 21px
+    font-size: 15px;
+    line-height: 21px;
 }
 
 .dark .load-more-refresh__button {
@@ -9061,7 +9061,7 @@ div.new-feature-badge-star {
     align-items: center;
     -ms-flex-pack: center;
     justify-content: center;
-    min-width: 75.78px
+    min-width: 45px
 }
 
 #reactions .reaction-items .reaction-item .reaction-item__button .reaction-item__image-wrapper .reaction-item__image, #reactions-promotion .reaction-items .reaction-item .reaction-item__button .reaction-item__image-wrapper .reaction-item__image {

@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Oldschool Disqus
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.1.1
 // @description  Bring back the old design of Disqus comments
 // @author       outofgold
 // @match        https://disqus.com/embed/comments/*
@@ -4208,12 +4208,12 @@ const css = "/* Default Disqus styles */\n" +
 ".load-more-refresh__button {\n" +
 "    display: block;\n" +
 "    text-align: center;\n" +
-"    padding: 9px 0 8px;\n" +
+"    padding: 6px 0 4px;\n" +
 "    /*border-radius: 15px;*/\n" +
 "    font-style: normal;\n" +
 "    font-weight: 700;\n" +
-"    font-size: 18px;\n" +
-"    line-height: 21px\n" +
+"    font-size: 15px;\n" +
+"    line-height: 21px;\n" +
 "}\n" +
 "\n" +
 ".dark .load-more-refresh__button {\n" +
@@ -9105,7 +9105,7 @@ const css = "/* Default Disqus styles */\n" +
 "    align-items: center;\n" +
 "    -ms-flex-pack: center;\n" +
 "    justify-content: center;\n" +
-"    min-width: 75.78px\n" +
+"    min-width: 45px\n" +
 "}\n" +
 "\n" +
 "#reactions .reaction-items .reaction-item .reaction-item__button .reaction-item__image-wrapper .reaction-item__image, #reactions-promotion .reaction-items .reaction-item .reaction-item__button .reaction-item__image-wrapper .reaction-item__image {\n" +
