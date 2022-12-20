@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Oldschool Disqus
 // @namespace    http://tampermonkey.net/
-// @version      0.1.5
+// @version      0.1.6
 // @description  Bring back the old design of Disqus comments
 // @author       outofgold
 // @match        https://disqus.com/embed/comments/*
@@ -1353,7 +1353,7 @@ const css = "/* Default Disqus styles */\n" +
 "    color: #fff;\n" +
 "    font-style: normal;\n" +
 "    font-weight: 600;\n" +
-"    font-size: 36px;\n" +
+"    font-size: 24px;\n" +
 "    line-height: 1.2;\n" +
 "    width: 48px;\n" +
 "    height: 48px;\n" +

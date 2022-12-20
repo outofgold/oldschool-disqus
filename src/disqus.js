@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Oldschool Disqus
 // @namespace    http://tampermonkey.net/
-// @version      0.1.5
+// @version      0.1.6
 // @description  Bring back the old design of Disqus comments
 // @author       outofgold
 // @match        https://disqus.com/embed/comments/*
