@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Oldschool Disqus
 // @namespace    http://tampermonkey.net/
-// @version      0.1.6
+// @version      0.1.7
 // @description  Bring back the old design of Disqus comments
 // @author       outofgold
 // @match        https://disqus.com/embed/comments/*
@@ -1436,11 +1436,11 @@ const css = "/* Default Disqus styles */\n" +
 "\n" +
 ".embed-refresh .badge {\n" +
 "    color: #2a2e2e;\n" +
-"    font-size: 14px;\n" +
-"    line-height: 18px;\n" +
+"    font-size: 13px;\n" +
+"    line-height: 15px;\n" +
 "    background: var(--publisher-color, #2e9fff);\n" +
 "    vertical-align: top;\n" +
-"    margin-left: 8px\n" +
+"    /* margin-left: 8px; */\n" +
 "}\n" +
 "\n" +
 ".embed-refresh .dark-anchor .badge {\n" +
