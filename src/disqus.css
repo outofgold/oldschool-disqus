@@ -519,7 +519,7 @@ h3, p {
 }
 
 .input--text, .inputBg, .textarea-outer-wrapper .textarea-wrapper {
-    border: 2px solid #dbdfe4;
+    /*border: 2px solid #dbdfe4;*/
     -webkit-appearance: none
 }
 
@@ -4431,8 +4431,9 @@ h6 {
     /*background-color: var(--publisher-color, #2e9fff)*/
 }
 
-.post-votes .vote-down.downvoted .control, .post-votes .vote-down.downvoted .count {
-    color: #f05f70
+.post-votes .vote-down.downvoted .control, .post-votes .vote-down.downvoted .count,
+.embed-refresh .post-votes .vote-down.downvoted .count {
+    color: #f05f70 !important;
 }
 
 .embed-refresh .dark-anchor .post-votes .vote-down.downvoted .count {
@@ -4499,8 +4500,9 @@ h6 {
     /*background-color: var(--publisher-color, #2e9fff)*/
 }
 
-.post-votes .vote-up.upvoted .control, .post-votes .vote-up.upvoted .count {
-    color: #2e9fff
+.post-votes .vote-up.upvoted .control, .post-votes .vote-up.upvoted .count,
+.embed-refresh .post-votes .vote-up.upvoted .count {
+    color: #2e9fff !important;
 }
 
 .embed-refresh .dark-anchor .post-votes .vote-up.upvoted .count {
@@ -4588,7 +4590,8 @@ h6 {
 }
 
 .comment__header .author a {
-    font-weight: 700
+    font-weight: 700;
+    color: #2e9fff !important;
 }
 
 .mobile .comment__header .author {
@@ -4747,7 +4750,9 @@ h6 {
 
 .comment__share .toggle, .edit .comment-footer__action, .reply .comment-footer__action {
     max-height: 18px;
-    padding: 0
+    padding: 0;
+    display: flex;
+    gap: 3px;
 }
 
 .comment__share .toggle .text, .edit .comment-footer__action .text, .reply .comment-footer__action .text {
@@ -4871,7 +4876,7 @@ h6 {
 .embed-refresh .post-meta {
     vertical-align: text-top;
     position: relative;
-    top: -5px;
+    top: 2px;
     display: inline-block !important;
     margin-left: 4px;
 }
@@ -6235,7 +6240,7 @@ h6 {
 }
 
 .textarea-outer-wrapper .textarea-wrapper {
-    background: #fff;
+    /*background: #fff;*/
     position: relative;
     border-radius: 4px;
     margin: 0
@@ -10204,4 +10209,26 @@ img[data-src] {
 
 li.voting {
     margin-right: 0 !important;
+}
+
+._container_ylcfx_1 {
+    border-radius: 3px;
+}
+
+._editor-container-expanded_ylcfx_37, ._editor-container_ylcfx_37 {
+    border-radius: 3px;
+}
+
+._placeholder_s9avi_1 {
+    top: 12px;
+    left: 12px;
+}
+
+._editor-expanded_ylcfx_13, ._editor_ylcfx_13 {
+    padding: 12px;
+    min-height: 44px !important;
+}
+
+._submit_k0g7a_84 {
+    border-radius: 3px;
 }

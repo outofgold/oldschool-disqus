@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Oldschool Disqus
 // @namespace    http://tampermonkey.net/
-// @version      0.1.7
+// @version      0.2.0
 // @description  Bring back the old design of Disqus comments
 // @author       outofgold
 // @match        https://disqus.com/embed/comments/*
@@ -563,7 +563,7 @@ const css = "/* Default Disqus styles */\n" +
 "}\n" +
 "\n" +
 ".input--text, .inputBg, .textarea-outer-wrapper .textarea-wrapper {\n" +
-"    border: 2px solid #dbdfe4;\n" +
+"    /*border: 2px solid #dbdfe4;*/\n" +
 "    -webkit-appearance: none\n" +
 "}\n" +
 "\n" +
@@ -4475,8 +4475,9 @@ const css = "/* Default Disqus styles */\n" +
 "    /*background-color: var(--publisher-color, #2e9fff)*/\n" +
 "}\n" +
 "\n" +
-".post-votes .vote-down.downvoted .control, .post-votes .vote-down.downvoted .count {\n" +
-"    color: #f05f70\n" +
+".post-votes .vote-down.downvoted .control, .post-votes .vote-down.downvoted .count,\n" +
+".embed-refresh .post-votes .vote-down.downvoted .count {\n" +
+"    color: #f05f70 !important;\n" +
 "}\n" +
 "\n" +
 ".embed-refresh .dark-anchor .post-votes .vote-down.downvoted .count {\n" +
@@ -4543,8 +4544,9 @@ const css = "/* Default Disqus styles */\n" +
 "    /*background-color: var(--publisher-color, #2e9fff)*/\n" +
 "}\n" +
 "\n" +
-".post-votes .vote-up.upvoted .control, .post-votes .vote-up.upvoted .count {\n" +
-"    color: #2e9fff\n" +
+".post-votes .vote-up.upvoted .control, .post-votes .vote-up.upvoted .count,\n" +
+".embed-refresh .post-votes .vote-up.upvoted .count {\n" +
+"    color: #2e9fff !important;\n" +
 "}\n" +
 "\n" +
 ".embed-refresh .dark-anchor .post-votes .vote-up.upvoted .count {\n" +
@@ -4632,7 +4634,8 @@ const css = "/* Default Disqus styles */\n" +
 "}\n" +
 "\n" +
 ".comment__header .author a {\n" +
-"    font-weight: 700\n" +
+"    font-weight: 700;\n" +
+"    color: #2e9fff !important;\n" +
 "}\n" +
 "\n" +
 ".mobile .comment__header .author {\n" +
@@ -4791,7 +4794,9 @@ const css = "/* Default Disqus styles */\n" +
 "\n" +
 ".comment__share .toggle, .edit .comment-footer__action, .reply .comment-footer__action {\n" +
 "    max-height: 18px;\n" +
-"    padding: 0\n" +
+"    padding: 0;\n" +
+"    display: flex;\n" +
+"    gap: 3px;\n" +
 "}\n" +
 "\n" +
 ".comment__share .toggle .text, .edit .comment-footer__action .text, .reply .comment-footer__action .text {\n" +
@@ -4915,7 +4920,7 @@ const css = "/* Default Disqus styles */\n" +
 ".embed-refresh .post-meta {\n" +
 "    vertical-align: text-top;\n" +
 "    position: relative;\n" +
-"    top: -5px;\n" +
+"    top: 2px;\n" +
 "    display: inline-block !important;\n" +
 "    margin-left: 4px;\n" +
 "}\n" +
@@ -6279,7 +6284,7 @@ const css = "/* Default Disqus styles */\n" +
 "}\n" +
 "\n" +
 ".textarea-outer-wrapper .textarea-wrapper {\n" +
-"    background: #fff;\n" +
+"    /*background: #fff;*/\n" +
 "    position: relative;\n" +
 "    border-radius: 4px;\n" +
 "    margin: 0\n" +
@@ -10248,4 +10253,26 @@ const css = "/* Default Disqus styles */\n" +
 "\n" +
 "li.voting {\n" +
 "    margin-right: 0 !important;\n" +
+"}\n" +
+"\n" +
+"._container_ylcfx_1 {\n" +
+"    border-radius: 3px;\n" +
+"}\n" +
+"\n" +
+"._editor-container-expanded_ylcfx_37, ._editor-container_ylcfx_37 {\n" +
+"    border-radius: 3px;\n" +
+"}\n" +
+"\n" +
+"._placeholder_s9avi_1 {\n" +
+"    top: 12px;\n" +
+"    left: 12px;\n" +
+"}\n" +
+"\n" +
+"._editor-expanded_ylcfx_13, ._editor_ylcfx_13 {\n" +
+"    padding: 12px;\n" +
+"    min-height: 44px !important;\n" +
+"}\n" +
+"\n" +
+"._submit_k0g7a_84 {\n" +
+"    border-radius: 3px;\n" +
 "}";
